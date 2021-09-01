@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #0F2438;
+  --secondary-color: #20364C;
+  --text-color: #CFD2D6;
+}
+  
+
+html, body {
+  font-family: system-ui;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  position: relative;
+  height: 100%;
+  transition: color 0.5s;
+}
+
+form {
+  padding: 8px;
+}
+
+fieldset {
+  margin-top: 8px;
+  border: none;
+  padding: 0;
+}
+
+input {
+  padding: 8px;
+}
+
+input[type="text"] {
+  margin-top: 4px;
+}
+
+input[type="submit"] {
+  margin-top: 16px;
+  font-weight: bold;
+}

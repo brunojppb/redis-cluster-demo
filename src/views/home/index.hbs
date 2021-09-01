@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="title">Redis Cluster Demo</h1>
+  {{#if dataSaved}}
+    <span>Data saved successfuly</span>
+  {{/if}}
+
+  <form action="/save-data" method="post">
+    <fieldset>
+      <label for="redisValue">Enter some unique key</label><br/>
+      <input type="text" id="redisValue" placeholder="my-unique-key" name="key" required/>
+    </fieldset>
+    <fieldset>
+      <label for="redisKey">Enter some value</label><br/>
+      <input type="text" id="redisKey" placeholder="Cool Stuff..." name="value" required/>
+    </fieldset>
+    <input type="submit" value="Send to Redis Cluster"/>
+  </form>
+
+  <div>
+    <h2>Search for data</h2>
+    <form action="/search" method="post">
+      <label for="search">Enter a key you stored previously</label><br/>
+      <input type="text" id="search" placeholder="my-unique-key" name="key" required/>
+      <input type="submit" value="Search"/>
+  </form>
+  </div>
+
+  {{#if value}}
+  <div>
+      <h3>Value stored in Redis:</h1>
+      <strong>{{ value }}</strong>
+  </div
+  {{/if}}
+  
+</div>
