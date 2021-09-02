@@ -5,6 +5,8 @@ volumes:
   redis_4_data: {}
   redis_5_data: {}
   redis_6_data: {}
+  # This volume is specific for the demo Express application
+  # built in this repo. You probably won't need that on your own setup.
   node_modules: {}
 
 services:
