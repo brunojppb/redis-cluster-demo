@@ -7,7 +7,7 @@ const buildRedisClient = require('./service/redisClient')
 const app = express()
 const port = process.env.PORT || 3000
 
-const redis = buildRedisClient('')
+const redis = buildRedisClient()
 
 app.use(express.urlencoded({ extended: true }))
 
