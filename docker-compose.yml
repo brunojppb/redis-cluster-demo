@@ -10,20 +10,18 @@ volumes:
   node_modules: {}
 
 services:
-
   app:
     container_name: express_app
-    image: express_app
     build:
       context: .
     environment:
       PORT: 4000
       NODE_ENV: production
-      REDIS_CLUSTER_URLS: 'redis_1:6379,redis_2:6379,redis_3:6379,redis_4:6379,redis_5:6379,redis_6:6379'
+      REDIS_CLUSTER_URLS: "redis_1:6379,redis_2:6379,redis_3:6379,redis_4:6379,redis_5:6379,redis_6:6379"
     volumes:
       - .:/app
       - node_modules:/app/node_modules
-    command: [ "npm", "run", "dev" ]
+    command: ["npm", "run", "dev"]
     depends_on:
       - redis_1
       - redis_2
@@ -44,79 +42,79 @@ services:
   # will have a replica, so in case of failures, the replica becomes the master.
   # They are configured by the `cluster_initiator` container.
   redis_1:
-    image: 'redis:latest'
+    image: "redis:latest"
     container_name: redis_1
     ports:
       - "6379"
     volumes:
       - redis_1_data:/data
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     networks:
       redis_cluster_net:
         ipv4_address: 173.18.0.2
 
   redis_2:
-    image: 'redis:latest'
+    image: "redis:latest"
     container_name: redis_2
     ports:
       - "6379"
     volumes:
       - redis_2_data:/data
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     networks:
       redis_cluster_net:
         ipv4_address: 173.18.0.3
 
   redis_3:
-    image: 'redis:latest'
+    image: "redis:latest"
     container_name: redis_3
     ports:
       - "6379"
     volumes:
       - redis_3_data:/data
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     networks:
       redis_cluster_net:
         ipv4_address: 173.18.0.4
-  
+
   redis_4:
-    image: 'redis:latest'
+    image: "redis:latest"
     container_name: redis_4
     ports:
       - "6379"
     volumes:
       - redis_4_data:/data
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     networks:
       redis_cluster_net:
         ipv4_address: 173.18.0.5
 
   redis_5:
-    image: 'redis:latest'
+    image: "redis:latest"
     container_name: redis_5
     ports:
       - "6379"
     volumes:
       - redis_5_data:/data
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     networks:
       redis_cluster_net:
         ipv4_address: 173.18.0.6
-  
+
   redis_6:
-    image: 'redis:latest'
+    image: "redis:latest"
     container_name: redis_6
     ports:
       - "6379"
     volumes:
       - redis_6_data:/data
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     networks:
       redis_cluster_net:
         ipv4_address: 173.18.0.7
@@ -148,7 +146,7 @@ services:
     environment:
       REDIS_HOSTS: "local:redis_1:6379,local:redis_2:6379,local:redis_3:6379"
     ports:
-      - "5000:8081"
+      - "5050:8081"
     depends_on:
       - redis_1
       - redis_2

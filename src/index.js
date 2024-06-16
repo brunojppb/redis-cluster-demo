@@ -1,8 +1,9 @@
 require('dotenv').config()
 const path = require('path')
 const express = require('express')
-const hbs = require('express-handlebars')
+const { engine } = require('express-handlebars')
 const buildRedisClient = require('./service/redisClient')
+
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -19,17 +20,11 @@ app.use((req, resp, next) => {
 
 /** handlebars template engine */
 const VIEWS_PATH = `${__dirname}/views`
-app.set('view engine', 'hbs')
+app.engine('.hbs', engine({
+  extname: '.hbs'
+}));
+app.set('view engine', '.hbs');
 app.set('views', VIEWS_PATH)
-app.engine(
-  'hbs',
-  hbs({
-    extname: 'hbs',
-    defaultView: 'default',
-    layoutsDir: `${VIEWS_PATH}/layouts/`,
-    partialsDir: `${VIEWS_PATH}/partials/`,
-  })
-)
 
 app.use(
   '/static', express.static(path.join(__dirname, '/public'))
