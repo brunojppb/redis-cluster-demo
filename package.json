@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "16.4.5",
-    "express": "4.19.2",
+    "express": "4.20.0",
     "express-handlebars": "7.1.2",
     "ioredis": "5.4.1"
   },
