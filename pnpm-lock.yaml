@@ -12,8 +12,8 @@ dependencies:
     specifier: 4.20.0
     version: 4.20.0
   express-handlebars:
-    specifier: 7.1.2
-    version: 7.1.2
+    specifier: 7.1.3
+    version: 7.1.3
   ioredis:
     specifier: 5.4.1
     version: 5.4.1
@@ -318,11 +318,11 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /express-handlebars@7.1.2:
-    resolution: {integrity: sha512-ss9d3mBChOLTEtyfzXCsxlItUxpgS3i4cb/F70G6Q5ohQzmD12XB4x/Y9U6YboeeYBJZt7WQ5yUNu7ZSQ/EGyQ==}
+  /express-handlebars@7.1.3:
+    resolution: {integrity: sha512-O0W4n14iQ8+iFIDdiMh9HRI2nbVQJ/h1qndlD1TXWxxcfbKjKoqJh+ti2tROkyx4C4VQrt0y3bANBQ5auQAiew==}
     engines: {node: '>=v16'}
     dependencies:
-      glob: 10.4.1
+      glob: 10.4.5
       graceful-fs: 4.2.11
       handlebars: 4.7.8
     dev: false
@@ -436,15 +436,15 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.4.1:
-    resolution: {integrity: sha512-2jelhlq3E4ho74ZyVLN03oKdAZVUa6UDZzFLVH1H7dnoax+y9qyaq8zBkfDIggjniU19z0wU18y16jMB2eyVIw==}
-    engines: {node: '>=16 || 14 >=14.18'}
+  /glob@10.4.5:
+    resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
     dependencies:
       foreground-child: 3.2.1
       jackspeak: 3.4.0
       minimatch: 9.0.4
       minipass: 7.1.2
+      package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
     dev: false
 
@@ -706,6 +706,10 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       ee-first: 1.1.1
+    dev: false
+
+  /package-json-from-dist@1.0.1:
+    resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
     dev: false
 
   /parseurl@1.3.3:
