@@ -11,7 +11,7 @@
   "author": "Bruno Paulino",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "17.2.2",
+    "dotenv": "17.2.3",
     "express": "5.1.0",
     "express-handlebars": "8.0.3",
     "ioredis": "5.8.0"
