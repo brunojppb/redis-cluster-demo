@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   dotenv:
-    specifier: 17.2.4
-    version: 17.2.4
+    specifier: 17.3.1
+    version: 17.3.1
   express:
     specifier: 5.2.1
     version: 5.2.1
@@ -252,8 +252,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /dotenv@17.2.4:
-    resolution: {integrity: sha512-mudtfb4zRB4bVvdj0xRo+e6duH1csJRM8IukBqfTRvHotn9+LBXB8ynAidP9zHqoRC/fsllXgk4kCKlR21fIhw==}
+  /dotenv@17.3.1:
+    resolution: {integrity: sha512-IO8C/dzEb6O3F9/twg6ZLXz164a2fhTnEWb95H23Dm4OuN+92NmEAlTrupP9VW6Jm3sO26tQlqyvyi4CsnY9GA==}
     engines: {node: '>=12'}
     dev: false
 
