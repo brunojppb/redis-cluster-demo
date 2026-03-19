@@ -14,7 +14,7 @@
     "dotenv": "17.3.1",
     "express": "5.2.1",
     "express-handlebars": "8.0.6",
-    "ioredis": "5.10.0"
+    "ioredis": "5.10.1"
   },
   "devDependencies": {
     "nodemon": "3.1.14"
