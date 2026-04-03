@@ -13,7 +13,7 @@
   "dependencies": {
     "dotenv": "17.4.0",
     "express": "5.2.1",
-    "express-handlebars": "8.0.7",
+    "express-handlebars": "9.0.0",
     "ioredis": "5.10.1"
   },
   "devDependencies": {
