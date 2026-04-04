@@ -12,8 +12,8 @@ dependencies:
     specifier: 5.2.1
     version: 5.2.1
   express-handlebars:
-    specifier: 9.0.0
-    version: 9.0.0
+    specifier: 9.0.1
+    version: 9.0.1
   ioredis:
     specifier: 5.10.1
     version: 5.10.1
@@ -230,8 +230,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /express-handlebars@9.0.0:
-    resolution: {integrity: sha512-npnA/8KTRENyKth0oODYuy9SWZe1yvBBLua3Ff6WsSeNkeN35AGM5uJjk230FDBa6zZnIFUondTOIh0Dfnc5KQ==}
+  /express-handlebars@9.0.1:
+    resolution: {integrity: sha512-zkU1G3SHfOXFMVlfZuYruOw5U2oaz+GsDEmnVfE4n5Gx0l+4si61lmFzjsHvu2OTmcabafBETAWg+HmAjLpAMA==}
     engines: {node: '>=22.22.2'}
     dependencies:
       glob: 13.0.6
