@@ -12,8 +12,8 @@ dependencies:
     specifier: 5.2.1
     version: 5.2.1
   express-handlebars:
-    specifier: 9.0.1
-    version: 9.0.1
+    specifier: 9.0.2
+    version: 9.0.2
   ioredis:
     specifier: 6.0.0
     version: 6.0.0
@@ -231,13 +231,13 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /express-handlebars@9.0.1:
-    resolution: {integrity: sha512-zkU1G3SHfOXFMVlfZuYruOw5U2oaz+GsDEmnVfE4n5Gx0l+4si61lmFzjsHvu2OTmcabafBETAWg+HmAjLpAMA==}
-    engines: {node: '>=22.22.2'}
+  /express-handlebars@9.0.2:
+    resolution: {integrity: sha512-SkcqBwc70F3z1kHAepnoXYYkBrYSPeSxIOYuVacUtV9XrfdysgRkGov8ToOjo8M1tKVX68su82UTxhJBNDSSog==}
+    engines: {node: '>=22.23.3'}
     dependencies:
       glob: 13.0.6
       graceful-fs: 4.2.11
-      handlebars: 4.7.9
+      handlebars: 4.7.10
     dev: false
 
   /express@5.2.1:
@@ -368,8 +368,8 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: false
 
-  /handlebars@4.7.9:
-    resolution: {integrity: sha512-4E71E0rpOaQuJR2A3xDZ+GM1HyWYv1clR58tC8emQNeQe3RH7MAzSbat+V0wG78LQBo6m6bzSG/L4pBuCsgnUQ==}
+  /handlebars@4.7.10:
+    resolution: {integrity: sha512-P5VJMVM7qgBn6vjXMw8WG9uVI+ncf2pi72j4de4yz5ZULLj2RGqLYaKOYGsgyrViQ0tePOVlN1tDCCXXtFqXKg==}
     engines: {node: '>=0.4.7'}
     hasBin: true
     dependencies:
