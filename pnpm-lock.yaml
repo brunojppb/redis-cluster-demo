@@ -12,8 +12,8 @@ dependencies:
     specifier: 5.3.0
     version: 5.3.0
   express-handlebars:
-    specifier: 9.0.2
-    version: 9.0.2
+    specifier: 9.0.3
+    version: 9.0.3
   ioredis:
     specifier: 6.0.0
     version: 6.0.0
@@ -27,6 +27,10 @@ packages:
 
   /@ioredis/commands@2.0.0:
     resolution: {integrity: sha512-vrx0AE/T0h7cRZwfo1M39Cr+ZhZrkf0V8mQN75wucKCxCLD9l/VX6no3gFvrLqD1IlG/1LtzWovqEw3t0Vr9zg==}
+    dev: false
+
+  /@isaacs/nonrecursive-glob-match@1.0.2:
+    resolution: {integrity: sha512-GJPHIgPPtFl+nLhFHyF0zZoFcOFLsZWbHFFzo+Zr+PWDXJbl9hHxb2w+9SiF2fHmLgKaXIpUzQo3SbBBZ9WObw==}
     dev: false
 
   /accepts@2.0.0:
@@ -71,11 +75,19 @@ packages:
       - supports-color
     dev: false
 
+  /brace-expansion@5.0.12:
+    resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
+    engines: {node: 20 || >=22}
+    dependencies:
+      balanced-match: 4.0.3
+    dev: false
+
   /brace-expansion@5.0.2:
     resolution: {integrity: sha512-Pdk8c9poy+YhOgVWw1JNN22/HcivgKWwpxKq04M/jTmHyCZn12WPJebZxdjSa5TmBqISrUSgNYU3eRORljfCCw==}
     engines: {node: 20 || >=22}
     dependencies:
       balanced-match: 4.0.3
+    dev: true
 
   /braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -217,11 +229,11 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /express-handlebars@9.0.2:
-    resolution: {integrity: sha512-SkcqBwc70F3z1kHAepnoXYYkBrYSPeSxIOYuVacUtV9XrfdysgRkGov8ToOjo8M1tKVX68su82UTxhJBNDSSog==}
-    engines: {node: '>=22.23.3'}
+  /express-handlebars@9.0.3:
+    resolution: {integrity: sha512-ntUC8bILzhxyVWuGg+4jwvJXWxAg879lgwvjpJ7vehuZ//jAkHHR52NZjxnf6LgrxPDWEVhENl+V8/lv89Rvuw==}
+    engines: {node: '>=22.23.4'}
     dependencies:
-      glob: 13.0.6
+      glob: 14.0.3
       graceful-fs: 4.2.11
       handlebars: 4.7.10
     dev: false
@@ -336,13 +348,13 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@13.0.6:
-    resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
+  /glob@14.0.3:
+    resolution: {integrity: sha512-A1vjIwC3qpdCso45Iw127gnp7sPhqgY8lUQhDrArIs+GbmfaaVPFuoyy7WyLT9EPZCRZ7j7aLdwUhQmHWesEow==}
     engines: {node: 18 || 20 || >=22}
     dependencies:
-      minimatch: 10.2.2
+      minimatch: 11.0.2
       minipass: 7.1.3
-      path-scurry: 2.0.2
+      path-scurry: 3.0.0
     dev: false
 
   /gopd@1.2.0:
@@ -493,6 +505,15 @@ packages:
     engines: {node: 18 || 20 || >=22}
     dependencies:
       brace-expansion: 5.0.2
+    dev: true
+
+  /minimatch@11.0.2:
+    resolution: {integrity: sha512-pWTgz5CN3tjqyZNSK2tePlSmu9IwM41q8yn8Usdqqwe9TIHh+9dEpLLjF4uApsfPEAZY71qtSiA2B2APEr+1Yw==}
+    engines: {node: 18 || 20 || >=22}
+    dependencies:
+      '@isaacs/nonrecursive-glob-match': 1.0.2
+      brace-expansion: 5.0.12
+    dev: false
 
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
@@ -560,8 +581,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /path-scurry@2.0.2:
-    resolution: {integrity: sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg==}
+  /path-scurry@3.0.0:
+    resolution: {integrity: sha512-1pTbQqH1wIwMi/eleQ5leFTTCkzFsPcgXNjwOA8YGGW/W4/kHT3dssE7Z6NH+zuqNLOzOB0uaD61yl7cAcVhgg==}
     engines: {node: 18 || 20 || >=22}
     dependencies:
       lru-cache: 11.0.2
