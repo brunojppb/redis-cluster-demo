@@ -12,8 +12,8 @@ dependencies:
     specifier: 5.3.0
     version: 5.3.0
   express-handlebars:
-    specifier: 9.0.4
-    version: 9.0.4
+    specifier: 9.0.5
+    version: 9.0.5
   ioredis:
     specifier: 6.0.0
     version: 6.0.0
@@ -29,8 +29,8 @@ packages:
     resolution: {integrity: sha512-vrx0AE/T0h7cRZwfo1M39Cr+ZhZrkf0V8mQN75wucKCxCLD9l/VX6no3gFvrLqD1IlG/1LtzWovqEw3t0Vr9zg==}
     dev: false
 
-  /@isaacs/nonrecursive-glob-match@1.0.2:
-    resolution: {integrity: sha512-GJPHIgPPtFl+nLhFHyF0zZoFcOFLsZWbHFFzo+Zr+PWDXJbl9hHxb2w+9SiF2fHmLgKaXIpUzQo3SbBBZ9WObw==}
+  /@isaacs/nonrecursive-glob-match@1.1.0:
+    resolution: {integrity: sha512-GPm/Dbvk5RLmhRnxXIa7nTpK0xtl4E0wj0MslsuNiJ1FIROU+2+9lgUC/dgF7Ey4QCWhfEsgxilMRMCdHPfDfw==}
     dev: false
 
   /accepts@2.0.0:
@@ -229,11 +229,11 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /express-handlebars@9.0.4:
-    resolution: {integrity: sha512-nwrDVURdu+6IRy7HYqPCQbVwBlu05sBG6WXNlxWRt5MdDU9ToWe2ruphDX4oIQ4dy/ylFR8m74CPQVG9YeALvQ==}
-    engines: {node: '>=22.23.4'}
+  /express-handlebars@9.0.5:
+    resolution: {integrity: sha512-eZTbrVhAoN5kNwLS/V9XI6SoEODdR3l4BZYggwTe/fu/yYm95zhbqqvf5/ILM5cJALOdcq45LeN/pIjw6gwOxA==}
+    engines: {node: '>=22.23.5'}
     dependencies:
-      glob: 14.0.3
+      glob: 14.0.5
       graceful-fs: 4.2.11
       handlebars: 4.7.10
     dev: false
@@ -348,11 +348,11 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@14.0.3:
-    resolution: {integrity: sha512-A1vjIwC3qpdCso45Iw127gnp7sPhqgY8lUQhDrArIs+GbmfaaVPFuoyy7WyLT9EPZCRZ7j7aLdwUhQmHWesEow==}
+  /glob@14.0.5:
+    resolution: {integrity: sha512-nbKW5Sl53DEM5PkmZ5Jwfeyss1ohuqcgOBjOarSjz1fp8W4ss4EOOvKADQRbApD6JmVBX+HkpZYfBez4wXbeQQ==}
     engines: {node: 18 || 20 || >=22}
     dependencies:
-      minimatch: 11.0.2
+      minimatch: 11.0.8
       minipass: 7.1.3
       path-scurry: 3.0.0
     dev: false
@@ -507,11 +507,11 @@ packages:
       brace-expansion: 5.0.2
     dev: true
 
-  /minimatch@11.0.2:
-    resolution: {integrity: sha512-pWTgz5CN3tjqyZNSK2tePlSmu9IwM41q8yn8Usdqqwe9TIHh+9dEpLLjF4uApsfPEAZY71qtSiA2B2APEr+1Yw==}
-    engines: {node: 18 || 20 || >=22}
+  /minimatch@11.0.8:
+    resolution: {integrity: sha512-nFQuYSTVrGvysVBps5Ih+0BdnYFN/Cj3C816r6+p7yK+FHrVLGE4O4N9AFwykrlNlvM2HYt+Rad1Uiro6h88Ig==}
+    engines: {node: 20 || >=22}
     dependencies:
-      '@isaacs/nonrecursive-glob-match': 1.0.2
+      '@isaacs/nonrecursive-glob-match': 1.1.0
       brace-expansion: 5.0.12
     dev: false
 
